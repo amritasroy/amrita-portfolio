@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amrita Sinha Roy · Portfolio</title>
+  <meta name="description" content="Portfolio of Amrita Sinha Roy – Full‑Stack & Cloud Engineer (AI/ML, Data, IoT)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d0f; --card:#12151a; --muted:#8a98a8; --text:#e8eef6; --brand:#5dd3ff; --brand2:#96fbc7; --br:16px;
+      --shadow: 0 10px 25px rgba(0,0,0,.35), 0 2px 8px rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,#0b0d0f 0%,#0e1116 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;gap:24px;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:var(--shadow)}
+    .title{line-height:1.1}
+    .title h1{margin:0;font-size:1.5rem;font-weight:700}
+    .title p{margin:2px 0 0;color:var(--muted)}
+    nav ul{list-style:none;display:flex;gap:16px;margin:0;padding:0}
+    nav a{padding:8px 12px;border-radius:999px;background:#12151a33}
+
+    .hero{margin:36px 0 22px;padding:24px;border-radius:var(--br);background:linear-gradient(135deg,#12151a 0%,#0f141a 100%);box-shadow:var(--shadow);display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+    .hero h2{margin:0 0 8px;font-size:1.9rem}
+    .hero p{margin:0 0 14px;color:var(--muted)}
+    .badges{display:flex;flex-wrap:wrap;gap:8px}
+    .badge{padding:8px 10px;border-radius:999px;background:#1a2027;color:#cfe8ff;font-size:.9rem;border:1px solid #243042}
+    .chip{padding:6px 10px;border-radius:8px;background:#151b22;border:1px solid #263042;color:#a8c1d8;font-size:.85rem}
+
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid #1c232d;border-radius:var(--br);padding:18px 18px 16px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 10px;font-size:1.15rem}
+    .meta{color:var(--muted);font-size:.9rem;margin-bottom:8px}
+    .pill{display:inline-block;margin-right:8px;margin-bottom:8px;padding:6px 10px;border-radius:999px;background:#0f141a;border:1px solid #263042;color:#a8c1d8;font-size:.8rem}
+    .cta{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#0b0d0f;font-weight:700;border:none}
+
+    .section-title{margin:28px 0 12px;font-size:1.3rem}
+    footer{margin:28px 0 0;padding:22px 0;color:#93a4b6;border-top:1px solid #1b2330}
+
+    /* responsive */
+    @media (max-width: 860px){
+      .hero{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="title">
+          <h1>Amrita Sinha Roy</h1>
+          <p>Full‑Stack & Cloud Engineer · AI / Data · IoT</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h2>Building scalable, data‑driven systems.</h2>
+        <p>MEng candidate in Electrical & Computer Engineering (Toronto Metropolitan University) with 6 years building Industrial IoT platforms, microservices and ML‑enabled data products at TCS. I ship reliable software, containerize it, and get it running in the cloud.</p>
+        <div class="badges" style="margin:12px 0 18px">
+          <span class="badge">JavaScript/TypeScript · Node.js</span>
+          <span class="badge">Python · FastAPI</span>
+          <span class="badge">Kubernetes · Docker</span>
+          <span class="badge">Azure · GCP</span>
+          <span class="badge">Kafka · ELK</span>
+        </div>
+        <a class="cta" href="#projects">View Projects →</a>
+      </div>
+      <div>
+        <div class="card">
+          <h3 style="margin-top:4px">Quick Links</h3>
+          <div class="meta">Make it easy to explore</div>
+          <p style="margin:0 0 10px">Resume · GitHub · LinkedIn · Email</p>
+          <div style="display:flex;flex-wrap:wrap;gap:10px">
+            <a class="chip" href="YOUR_RESUME_LINK" target="_blank" rel="noopener">Resume (PDF)</a>
+            <a class="chip" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a>
+            <a class="chip" href="https://www.linkedin.com/in/amrita-sinha-roy/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="chip" href="mailto:amritasinharoy6@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h2 id="projects" class="section-title">Featured Projects</h2>
+    <section class="grid">
+      <!-- Project Card 1 -->
+      <article class="card">
+        <h3>AI‑powered Incident Responder for Industrial IoT Sensors</h3>
+        <div class="meta">Python · Kafka · FastAPI · TensorFlow · MLflow · Docker · ELK</div>
+        <p>End‑to‑end anomaly detection with streaming ingestion, model serving, and live dashboards. Reduced incident detection time from minutes to seconds.</p>
+        <div>
+          <span class="pill">Streaming</span><span class="pill">Anomaly Detection</span><span class="pill">Observability</span>
+        </div>
+      </article>
+      <!-- Project Card 2 -->
+      <article class="card">
+        <h3>Real‑time Vehicle Telemetry Analytics (MLOps + ELK)</h3>
+        <div class="meta">Kafka · Elasticsearch · Kibana · Airflow · MLflow · FastAPI</div>
+        <p>MLOps pipeline for live vehicle data with predictive maintenance models and real‑time dashboards for fleet operators.</p>
+        <div>
+          <span class="pill">MLOps</span><span class="pill">Time‑series</span><span class="pill">APIs</span>
+        </div>
+      </article>
+      <!-- Project Card 3 -->
+      <article class="card">
+        <h3>U‑Net Segmentation with Attention</h3>
+        <div class="meta">TensorFlow · OpenCV · Python</div>
+        <p>Semantic segmentation for autonomous driving datasets; accuracy improvements with attention layers and robust augmentation.</p>
+        <div>
+          <span class="pill">Computer Vision</span><span class="pill">Deep Learning</span>
+        </div>
+      </article>
+      <!-- Project Card 4 -->
+      <article class="card">
+        <h3>Federated Learning – Model Poisoning Simulation</h3>
+        <div class="meta">PyTorch · TFF · NumPy · Pandas</div>
+        <p>Simulated label‑flipping/backdoor attacks; benchmarked robust aggregation strategies to maintain accuracy under adversarial pressure.</p>
+        <div>
+          <span class="pill">Security</span><span class="pill">Research</span>
+        </div>
+      </article>
+      <!-- Project Card 5 -->
+      <article class="card">
+        <h3>Industrial IoT Platform (TCS Connected Universe)</h3>
+        <div class="meta">Node.js · Vue.js · PostgreSQL · Redis · Kubernetes · Docker</div>
+        <p>Microservices for sensor data visualization and analytics; ownership of key modules; performance tuning for scale.</p>
+        <div>
+          <span class="pill">Microservices</span><span class="pill">IoT</span><span class="pill">Cloud</span>
+        </div>
+      </article>
+      <!-- Project Card 6 -->
+      <article class="card">
+        <h3>Automated Parsing of Unstructured Data</h3>
+        <div class="meta">Python · Pandas · Regex · Azure Functions</div>
+        <p>Serverless pipeline to extract/normalize multi‑format files for a Fortune 500 chemical company, cutting prep time to hours.</p>
+        <div>
+          <span class="pill">ETL</span><span class="pill">Serverless</span>
+        </div>
+      </article>
+    </section>
+
+    <h2 id="skills" class="section-title">Skills</h2>
+    <section class="grid">
+      <div class="card">
+        <div class="meta">Languages & Frameworks</div>
+        <p>JavaScript, TypeScript, Node.js, Express, Vue.js, Python, FastAPI, REST APIs, HTML, CSS</p>
+        <div class="meta">Cloud & DevOps</div>
+        <p>Azure, GCP, Kubernetes, Docker, GitLab CI/CD, Terraform (basic)</p>
+        <div class="meta">Data & ML</div>
+        <p>Kafka, Elasticsearch/Logstash/Kibana, Airflow, MLflow, Scikit‑learn, Pandas, NumPy, TensorFlow</p>
+        <div class="meta">Databases</div>
+        <p>PostgreSQL, Redis, (MongoDB exposure)</p>
+      </div>
+    </section>
+
+    <h2 id="experience" class="section-title">Experience</h2>
+    <section class="grid">
+      <article class="card">
+        <h3>Graduate Assistant · Toronto Metropolitan University <span style="color:var(--muted);font-weight:400">(Jan–Apr 2025)</span></h3>
+        <p>Supported COE528 (OO Engineering A&D). Built small automations for grading/analytics; facilitated weekly tutorials.</p>
+      </article>
+      <article class="card">
+        <h3>Tata Consultancy Services – Connected Universe Platform <span style="color:var(--muted);font-weight:400">(2018–2024)</span></h3>
+        <p>Designed & built microservices, data utilities and visualization tools for Industrial IoT. Took ownership of key modules, mentored juniors, and drove performance improvements at scale.</p>
+      </article>
+    </section>
+
+    <h2 id="contact" class="section-title">Contact</h2>
+    <section class="grid">
+      <div class="card">
+        <p>Email: <a href="mailto:amritasinharoy6@gmail.com">amritasinharoy6@gmail.com</a></p>
+        <p>LinkedIn: <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/amrita-sinha-roy/">linkedin.com/in/amrita-sinha-roy</a></p>
+        <p>GitHub: <a target="_blank" rel="noopener" href="https://github.com/YOUR_GITHUB">github.com/YOUR_GITHUB</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap" style="padding:0">
+        © <span id="y"></span> · Built with ♥ by Amrita
+      </div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
