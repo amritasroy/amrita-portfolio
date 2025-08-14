@@ -1,4 +1,4 @@
-# Amrita Sinha Roy – Minimal Portfolio
+# Amrita Sinha Roy – Portfolio
 
 ## About Me
 Master’s candidate in Electrical and Computer Engineering (ECE) at Toronto Metropolitan University with 6 years of experience at TCS in IoT platforms, code development, and data engineering.
